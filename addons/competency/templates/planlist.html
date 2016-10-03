@@ -1,4 +1,6 @@
 <ion-view view-title="{{ 'mma.competency.userplans' | translate }}">
+ <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <mm-split-view load-when="plansLoaded" component="mmaLearningPlansList">
         <ion-content mm-state-class>
             <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="plansLoaded" on-refresh="refreshLearningPlans()">
