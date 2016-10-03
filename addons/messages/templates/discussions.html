@@ -1,4 +1,6 @@
 <ion-content class="has-tabs" mm-state-class>
+       <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="loaded" on-refresh="refresh()"></ion-refresher>
     <mm-loading hide-until="loaded">
         <ul class="list">
