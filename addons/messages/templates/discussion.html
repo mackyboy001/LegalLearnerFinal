@@ -1,6 +1,7 @@
 <ion-view>
     <ion-nav-title>{{ title }}</ion-nav-title>
-
+    <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <mm-nav-buttons side="secondary">
         <button class="button button-icon ion-edit" ng-click="toggleDelete()" ng-show="data.canDelete"></button>
         <a ng-if="profileLink" mm-user-link userid="{{userId}}" aria-label="{{ 'mm.user.viewprofile' | translate }}">
