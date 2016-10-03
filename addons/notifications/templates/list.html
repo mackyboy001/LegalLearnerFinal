@@ -1,4 +1,6 @@
 <ion-view view-title="{{ 'mma.notifications.notifications' | translate }}">
+    <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <ion-content padding="true" mm-state-class>
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="notificationsLoaded" on-refresh="refreshNotifications()">
         </ion-refresher>
