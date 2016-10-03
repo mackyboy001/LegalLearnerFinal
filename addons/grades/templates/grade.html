@@ -1,4 +1,6 @@
 <ion-view view-title="{{ 'mma.grades.grade' | translate }}">
+ <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <ion-content mm-state-class>
         <!-- ion-refresher needs to be direct child of ion-content to work with native scrolling -->
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="gradeLoaded && grade" on-refresh="refreshGrade()">
