@@ -1,4 +1,6 @@
 <ion-view view-title="{{ 'mm.courses.searchcourses' | translate }}">
+ <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <ion-content padding="true" mm-state-class>
         <mm-searchbox submit-action="search" placeholder="{{ 'mm.courses.search' | translate }}" initial-value="{{searchText}}" search-label="{{ 'mm.courses.search' | translate}}" autofocus="true"></mm-searchbox>
         <div ng-if="courses">
