@@ -33,7 +33,7 @@
                             <i class="icon ion-ionic"></i>{{ 'mm.sidemenu.mycourses' | translate}}
                         </a>
                     </li>
-                    <li class="item text-center" ng-if="(!handlers || !handlers.length)">
+                    <li class="item text-center" ng-if="(!handlers || !handlers.length) && !areNavHandlersLoaded()">
                         <ion-spinner></ion-spinner>
                     </li>
                     <li ng-repeat="handler in handlers | orderBy:'-priority'" ng-controller="handler.controller" class="mm-sidemenu-handler {{class}}">
@@ -64,7 +64,7 @@
         </ion-content>
     </ion-side-menu>
 
-    <ion-side-menu side="right" id="mm-side-menu-right" is-enabled="rightSideMenu.show">
-        <ng-include ng-if="rightSideMenu.show" src="rightSideMenu.template"></ng-include>
+    <ion-side-menu side="right" id="mm-side-menu-right" is-enabled="rightSideMenu && rightSideMenu.show">
+        <ng-include ng-if="rightSideMenu && rightSideMenu.show" src="rightSideMenu.template"></ng-include>
     </ion-side-menu>
 </ion-side-menus>
