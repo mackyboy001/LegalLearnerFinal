@@ -7765,7 +7765,7 @@ angular.module('mm.core.login', [])
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl',
 		onEnter: function($state) {
-        $state.go('mm_login.credentials', {siteurl: 'http://192.168.0.14/index.php'});
+        $state.go('mm_login.credentials', {siteurl: 'http://192.168.0.14'});
     }
     })
 	
