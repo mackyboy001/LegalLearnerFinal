@@ -1,4 +1,6 @@
 <ion-view view-title="{{ 'mma.mod_forum.addanewdiscussion' | translate }}">
+    <ion-nav-bar class="bar bar-header bar-positive">
+ </ion-nav-bar>
     <ion-content padding="true" mm-state-class delegate-handle="mmaModForumNewDiscussion">
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="groupsLoaded" on-refresh="refreshGroups()">
         </ion-refresher>
